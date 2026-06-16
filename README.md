@@ -55,23 +55,23 @@ See 'snap info docker' for additional versions.
 ![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task1-3-1.png)
 
 #### Вот добавленные 5 файлов в проект:
-```
-```
+``
+``
 ![.dockerignore](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/.dockerignore)
-```
-```
+``
+``
 ![.gitignore](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/.gitignore)
-```
-```
+``
+``
 ![Dockerfile.python](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Dockerfile.python)
-```
-```
+``
+``
 ![compose.yaml](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/compose.yaml)
-```
-```
+``
+``
 ![deploy.sh](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/deploy.sh)
-```
-```
+``
+``
 
 ## Задача 2 (*)
 1. Создайте в yandex cloud container registry с именем "test" с помощью "yc tool" . [Инструкция](https://cloud.yandex.ru/ru/docs/container-registry/quickstart/?from=int-console-help)
