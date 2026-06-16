@@ -27,6 +27,9 @@ See 'snap info docker' for additional versions.
 ###  **Своё решение к задачам оформите в вашем GitHub репозитории!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
 
 ---
+#### Ответ:
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task0.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task0-1.png)
 
 ## Задача 1
 1. Сделайте в своем GitHub пространстве fork [репозитория](https://github.com/netology-code/shvirtd-example-python).
@@ -44,6 +47,12 @@ See 'snap info docker' for additional versions.
 ### ВНИМАНИЕ!
 !!! В процессе последующего выполнения ДЗ НЕ изменяйте содержимое файлов в fork-репозитории! Ваша задача ДОБАВИТЬ 5 файлов: ```Dockerfile.python```, ```compose.yaml```, ```.gitignore```, ```.dockerignore```,```bash-скрипт```. Если вам понадобилось внести иные изменения в проект - вы что-то делаете неверно!
 ---
+#### Ответ:
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task1-1.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task1-2.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task1-2-1.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task1-3.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task1-3-1.png)
 
 ## Задача 2 (*)
 1. Создайте в yandex cloud container registry с именем "test" с помощью "yc tool" . [Инструкция](https://cloud.yandex.ru/ru/docs/container-registry/quickstart/?from=int-console-help)
@@ -51,6 +60,13 @@ See 'snap info docker' for additional versions.
 3. Соберите и залейте в него образ с python приложением из задания №1.
 4. Просканируйте образ на уязвимости.
 5. В качестве ответа приложите отчет сканирования.
+#### Ответ:
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task2-2yandex.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task2-3yandex.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task2-4yandex.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task2-5yandex.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task2-6yandex.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task2-7yandex.png)
 
 ## Задача 3
 1. Изучите файл "proxy.yaml"
@@ -67,6 +83,12 @@ See 'snap info docker' for additional versions.
 5. Подключитесь к БД mysql с помощью команды ```docker exec -ti <имя_контейнера> mysql -uroot -p<пароль root-пользователя>```(обратите внимание что между ключем -u и логином root нет пробела. это важно!!! тоже самое с паролем) . Введите последовательно команды (не забываем в конце символ ; ): ```show databases; use <имя вашей базы данных(по-умолчанию virtd, как это указано в .env)>; show tables; SELECT * from requests LIMIT 10;```. Примечание: таблица в БД создается после первого поступившего запроса к приложению.
 
 6. Остановите проект. В качестве ответа приложите скриншот sql-запроса.
+#### Ответ:
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task3-1.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task3-2.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task3-3.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task3-4.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task3-5.png)
 
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
@@ -75,18 +97,29 @@ See 'snap info docker' for additional versions.
 4. Зайдите на сайт проверки http подключений, например(или аналогичный): ```https://check-host.net/check-http``` и запустите проверку вашего сервиса ```http://<внешний_IP-адрес_вашей_ВМ>:8090```. Таким образом трафик будет направлен в ingress-proxy. Трафик должен пройти через цепочки: Пользователь → Internet → Nginx → HAProxy → FastAPI(запись в БД) → HAProxy → Nginx → Internet → Пользователь
 5. (Необязательная часть) Дополнительно настройте remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения ```docker ps -a```
 6. Повторите SQL-запрос на сервере и приложите скриншот и ссылку на fork.
+#### Ответ:
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task4-1.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task4-2.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task4-3.png)
 
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
 2. Протестируйте ручной запуск
 3. Настройте выполнение скрипта раз в 1 минуту через cron, crontab или systemctl timer. Придумайте способ не светить логин/пароль в git!!
 4. Предоставьте скрипт, cron-task и скриншот с несколькими резервными копиями в "/opt/backup"
-
+#### Ответ:
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task5-1.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task5-2.png)
 ## Задача 6
 Скачайте docker образ ```hashicorp/terraform:latest``` и скопируйте бинарный файл ```/bin/terraform``` на свою локальную машину, используя dive и docker save.
 Предоставьте скриншоты  действий .
-
+#### Ответ:
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task6-1.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task6-2.png)
 ## Задача 6.1
 Добейтесь аналогичного результата, используя docker cp.  
 Предоставьте скриншоты  действий .
+#### Ответ:
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task6-3.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task6-4.png)
 
