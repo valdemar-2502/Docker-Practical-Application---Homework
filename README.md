@@ -67,6 +67,8 @@ See 'snap info docker' for additional versions.
 ![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task2-5yandex.png)
 ![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task2-6yandex.png)
 ![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task2-7yandex.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task8-1.png)
+![docker](https://github.com/valdemar-2502/Docker-Practical-Application---Homework/blob/main/Screenshots/task8-2.png)
 
 ## Задача 3
 1. Изучите файл "proxy.yaml"
